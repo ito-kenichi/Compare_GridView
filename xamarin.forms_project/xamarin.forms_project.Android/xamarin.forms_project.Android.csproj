@@ -65,6 +65,24 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="..\xamarin.forms_project\images\image002.jpg">
+      <Link>Resources\drawable\images\image002.jpg</Link>
+    </None>
+    <None Include="..\xamarin.forms_project\images\image003.jpg">
+      <Link>Resources\drawable\images\image003.jpg</Link>
+    </None>
+    <None Include="..\xamarin.forms_project\images\image001.jpg">
+      <Link>Resources\drawable\images\image001.jpg</Link>
+    </None>
+    <None Include="..\xamarin.forms_project\images\image000.jpg">
+      <Link>Resources\drawable\images\image000.jpg</Link>
+    </None>
+    <None Include="..\xamarin.forms_project\images\image004.jpg">
+      <Link>Resources\drawable\images\image004.jpg</Link>
+    </None>
+    <None Include="..\xamarin.forms_project\images\image005.jpg">
+      <Link>Resources\drawable\images\image005.jpg</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.xml" />
@@ -85,6 +103,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>

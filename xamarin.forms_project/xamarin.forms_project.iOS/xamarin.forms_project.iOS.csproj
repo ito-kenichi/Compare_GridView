@@ -133,4 +133,24 @@
       <Name>xamarin.forms_project</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\xamarin.forms_project\images\image002.jpg">
+      <Link>Resources\images\image002.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\xamarin.forms_project\images\image003.jpg">
+      <Link>Resources\images\image003.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\xamarin.forms_project\images\image001.jpg">
+      <Link>Resources\images\image001.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\xamarin.forms_project\images\image000.jpg">
+      <Link>Resources\images\image000.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\xamarin.forms_project\images\image004.jpg">
+      <Link>Resources\images\image004.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\xamarin.forms_project\images\image005.jpg">
+      <Link>Resources\images\image005.jpg</Link>
+    </BundleResource>
+  </ItemGroup>
 </Project>

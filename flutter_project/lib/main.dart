@@ -25,40 +25,34 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            SafeArea(child: Container(color: Colors.red)),
-            Text(
-              'You have pushed the button this many times:',
+    var list = [
+      _photoItem("pic0"),
+      _photoItem("pic1"),
+      _photoItem("pic2"),
+      _photoItem("pic3"),
+      _photoItem("pic4"),
+      _photoItem("pic5"),
+    ];
+    return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('GridView'),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+            body: GridView.count(
+                crossAxisCount: 3,
+                children: list
+            )
+        )
+    );
+  }
+
+  Widget _photoItem(String image) {
+    var assetsImage = "assets/img/" + image + ".jpg";
+    return Container(
+      child: Image.asset(assetsImage, fit: BoxFit.cover,),
     );
   }
 }

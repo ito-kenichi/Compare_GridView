@@ -1,17 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="images\image002.jpg" />
+      <None Remove="images\image003.jpg" />
+      <None Remove="images\image001.jpg" />
+      <None Remove="images\image000.jpg" />
+      <None Remove="images\image004.jpg" />
+      <None Remove="images\image005.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="images\image002.jpg" />
+      <EmbeddedResource Include="images\image003.jpg" />
+      <EmbeddedResource Include="images\image001.jpg" />
+      <EmbeddedResource Include="images\image000.jpg" />
+      <EmbeddedResource Include="images\image004.jpg" />
+      <EmbeddedResource Include="images\image005.jpg" />
+    </ItemGroup>
 </Project>
